@@ -16,3 +16,6 @@ node_modules
 **/.DS_Store
 
 README.md
+
+# Ignore the lock.yaml file
+pnpm-lock.yaml
