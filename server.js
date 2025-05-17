@@ -22,6 +22,7 @@ app.set("layout", "./layouts/layout")
  * Routes
  *************************/
 app.use(static)
+app.use(static)
 // Index or Home route
 app.get("/", function (req, res) {
   res.render("index", {title: "Home"})
