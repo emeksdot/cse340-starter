@@ -1,8 +1,12 @@
+-- Database for CSE 340 Coursework .public schema
+-- Assignment 2, Task 2
+
+
 CREATE TYPE public.account_type AS ENUM
     ('Client', 'Employee', 'Admin');
 
 ALTER TYPE public.account_type
-    OWNER TO cse340eto;
+    OWNER TO cse340emeka;
 
 
 -- Table structure for table 'classification'
@@ -238,3 +242,8 @@ VALUES   (
     'White',
     5
   );
+
+  -- Update of all the records to add "/vehicles"
+UPDATE public.inventory
+SET inv_image=REPLACE(inv_image, '/images', '/images/vehicles'),
+	inv_thumbnail= REPLACE(inv_thumbnail, '/images', '/images/vehicles');
