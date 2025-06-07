@@ -249,3 +249,9 @@ footer {
   text-align: center;
   background-color: #fff;
 }
+
+
+.error-container{
+  background-color: #fff;
+  padding: 2rem;
+}
