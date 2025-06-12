@@ -185,6 +185,7 @@ main {
   gap: 30px;
   justify-content: center;
   min-height: 100vh;
+  background-color: #fff;
 }
 
 header {
@@ -254,4 +255,13 @@ footer {
 .error-container{
   background-color: #fff;
   padding: 2rem;
+}
+
+#inv-display{
+  width: 100%;
+  background-color: #fff;
+  border: 3px red solid;
+  height: 100%;
+  margin-top: 1rem;
+  padding-top: 3rem;
 }

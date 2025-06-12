@@ -13,6 +13,8 @@ const static = require("./routes/static")
 const baseController = require("./controllers/baseController")
 const utilities = require("./utilities/")
 const inventoryRoute = require("./routes/inventoryRoute")
+const session = require("express-session")
+const pool = require('./database/')
 
 /* ***********************
  * View Engine and Templates
@@ -60,7 +62,7 @@ app.use(async (err, req, res, next) => {
  * Local Server Information
  * Values from .env (environment) file
  *************************/
-const port = process.env.PORT
+const port = process.env.PORT || 5500
 const host = process.env.HOST
 
 /* ***********************
